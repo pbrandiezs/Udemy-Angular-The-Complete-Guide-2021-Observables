@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit, Output } from '@angular/core';
 import { interval, Subscription, Observable } from 'rxjs';
 import { map, filter } from 'rxjs/operators';
 
@@ -8,6 +8,7 @@ import { map, filter } from 'rxjs/operators';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
+  @Output()
 
   private firstObsSubscription: Subscription;
 
